@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author : yanwenhui
  * @description :
- * @date : 2020/8/3
+ * @date : 2020/8/4
  */
 @SpringBootApplication
 public class SpringSecurityResourceApplication {

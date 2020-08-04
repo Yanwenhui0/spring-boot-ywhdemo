@@ -4,7 +4,21 @@ server:
 spring:
   application:
     name: security-server
-  security:
-    user:
-      name: root
-      password: 123456
+  datasource:
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/spring-security?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&autoReconnect=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ywh169747
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+mybatis:
+  type-aliases-package: com.springboot.springsecurity.server.domain
+  mapper-locations: classpath:mybatis/mapper/*.xml

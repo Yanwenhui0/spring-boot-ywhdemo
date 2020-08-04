@@ -16,6 +16,12 @@
         <alibaba-spring-context-support.version>1.0.5</alibaba-spring-context-support.version>
         <apache-sharding-sphere.version>4.0.0-RC3</apache-sharding-sphere.version>
         <okhttp3.version>4.2.2</okhttp3.version>
+        <spring-boot-mapper.version>2.1.5</spring-boot-mapper.version>
+        <commons-collection.version>4.4</commons-collection.version>
+        <commons-lang.version>3.9</commons-lang.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <jackson.version>2.11.0</jackson.version>
+        <guava.version>29.0-jre</guava.version>
     </properties>
 
     <licenses>
@@ -96,6 +102,11 @@
 
             <!-- Others -->
             <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${spring-boot-mapper.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${spring-boot-pagehelper.version}</version>
@@ -105,6 +116,42 @@
                 <artifactId>okhttp</artifactId>
                 <version>${okhttp3.version}</version>
             </dependency>
+
+            <!-- commons-collections4 some collection utils -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collection.version}</version>
+            </dependency>
+
+            <!-- commons-lang3 some string utils -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang.version}</version>
+            </dependency>
+
+            <!-- alibaba fastjson utils -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!-- jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <!-- guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
