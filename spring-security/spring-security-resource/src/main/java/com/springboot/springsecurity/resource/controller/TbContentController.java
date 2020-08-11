@@ -18,7 +18,7 @@ import java.util.List;
 @RestController
 public class TbContentController {
 
-    private static final String ROLE_ADMIN = "admin";
+    private static final String ROLE_ADMIN = "hasRole('admin')";
 
     @Autowired
     private TbContentService tbContentService;
@@ -38,7 +38,7 @@ public class TbContentController {
      *
      * @return
      */
-    @PreAuthorize("hasRole('admin')")
+    @PreAuthorize(ROLE_ADMIN)
     @GetMapping("/")
     public ResponseResult<List<TbContent>> selectAll() {
         return new ResponseResult<>(HttpStatus.OK.value(), HttpStatus.OK.toString(), tbContentService.selectAll());
