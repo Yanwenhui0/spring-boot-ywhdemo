@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author : yanwenhui
@@ -39,5 +40,16 @@ public class AutoFillTest {
         article.setContent("1");
         articleMapper.updateById(article);
 
+    }
+
+    @Test
+    public void logicDelete() {
+        System.out.println(articleMapper.deleteById(10));
+    }
+
+    @Test
+    public void selectAll() {
+        List<Article> articles = articleMapper.selectList(null);
+        articles.forEach(article -> System.out.println(article.toString()));
     }
 }
