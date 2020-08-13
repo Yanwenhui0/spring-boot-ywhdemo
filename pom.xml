@@ -50,6 +50,8 @@
         <module>spring-security</module>
         <module>springdata-more</module>
         <module>swagger</module>
+        <module>spring-myweb</module>
+        <module>spring-redis</module>
     </modules>
 
     <dependencyManagement>
