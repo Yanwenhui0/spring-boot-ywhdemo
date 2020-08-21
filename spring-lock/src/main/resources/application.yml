@@ -1,0 +1,8 @@
+spring:
+  redis:
+    host: 39.100.31.158
+    port: 6379
+    database: 1
+  zookeeper:
+    host: 39.100.31.158:2181
+    nameSpace: zlock

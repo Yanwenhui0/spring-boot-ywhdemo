@@ -53,6 +53,7 @@
         <module>spring-myweb</module>
         <module>spring-redis</module>
         <module>spring-jmh</module>
+        <module>spring-lock</module>
     </modules>
 
     <dependencyManagement>
