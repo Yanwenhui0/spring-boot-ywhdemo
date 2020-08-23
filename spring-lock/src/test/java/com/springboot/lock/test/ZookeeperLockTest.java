@@ -1,6 +1,6 @@
 package com.springboot.lock.test;
 
-import com.springboot.lock.LockApplication;
+import com.springboot.lock.zookeeper.LockByZookeeper;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.CreateMode;
 import org.junit.jupiter.api.Test;
@@ -20,6 +20,14 @@ public class ZookeeperLockTest {
 
     @Autowired
     private CuratorFramework curatorTemplate;
+
+    @Autowired
+    private LockByZookeeper lockByZookeeper;
+
+    @Test
+    public void getLock() throws Exception {
+        lockByZookeeper.getZookeeperLock();
+    }
 
     @Test
     public void createNode() throws Exception {
