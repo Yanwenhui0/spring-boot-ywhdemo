@@ -31,7 +31,7 @@ public class ZookeeperLockTest {
 
     @Test
     public void createNode() throws Exception {
-        System.out.println(curatorTemplate.create().withMode(CreateMode.PERSISTENT_SEQUENTIAL).forPath("/key"));
+        System.out.println(curatorTemplate.create().withMode(CreateMode.EPHEMERAL_SEQUENTIAL).forPath("/key"));
         List<String> forPath = curatorTemplate.getChildren().forPath("/");
         Collections.sort(forPath);
         for (String s : forPath) {
