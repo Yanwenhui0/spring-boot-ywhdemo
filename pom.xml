@@ -54,6 +54,7 @@
         <module>spring-redis</module>
         <module>spring-jmh</module>
         <module>spring-lock</module>
+        <module>spring-webSocket</module>
     </modules>
 
     <dependencyManagement>
