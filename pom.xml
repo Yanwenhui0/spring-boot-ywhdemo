@@ -55,6 +55,7 @@
         <module>spring-jmh</module>
         <module>spring-lock</module>
         <module>spring-webSocket</module>
+        <module>spring-admin-example</module>
     </modules>
 
     <dependencyManagement>
