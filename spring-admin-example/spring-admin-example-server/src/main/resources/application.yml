@@ -1,0 +1,42 @@
+server:
+  port: 8080
+#  servlet:
+#    context-path: /admin-server
+
+spring:
+  application:
+    name: spring-boot-admin-server
+  cloud:
+    nacos:
+      discovery:
+        group: spring-boot-admin
+        metadata:
+          user.name: "yanwenhui"
+          user.password: "ywh169747"
+      server-addr: 39.100.31.158:8848
+      username: nacos
+      password: nacos
+  security:
+    user:
+      name: yanwenhui
+      password: ywh169747
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 1697479326@qq.com
+    password: jkqccrytruxoejcg
+  boot:
+    admin:
+      notify:
+        mail:
+          to: ywh1697479326@qq.com
+          from: 1697479326@qq.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
