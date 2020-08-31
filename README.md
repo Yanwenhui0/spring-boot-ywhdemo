@@ -5,7 +5,7 @@
 
 - spring-boot-dependencies : unite dependencies for project
 - more datasource
-    - mybatis-more
+    - [mybatis-more](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/mybatis-more)
     - mybatis-plus-more
     - springdata-more
 - spring-admin-example : demo of spring admin by nacos, email and security
