@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 
 /**
  * @author : yanwenhui
- * @description :
+ * @description : moreUser mybatis-xml 映射接口
  * @date : 2020/7/28
  */
 @Mapper

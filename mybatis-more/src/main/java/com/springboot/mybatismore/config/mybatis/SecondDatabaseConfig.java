@@ -26,7 +26,7 @@ import java.util.stream.Stream;
 
 /**
  * @author : yanwenhui
- * @description :
+ * @description : 二数据源配置类
  * @date : 2020/7/28
  */
 @Configuration

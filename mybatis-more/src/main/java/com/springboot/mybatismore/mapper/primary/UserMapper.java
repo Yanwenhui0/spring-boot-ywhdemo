@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @author : yanwenhui
- * @description :
+ * @description : user mybatis-xml 映射接口
  * @date : 2020/7/28
  */
 @Mapper

@@ -5,7 +5,7 @@ import lombok.ToString;
 
 /**
  * @author : yanwenhui
- * @description :
+ * @description : moreUser-do实体类
  * @date : 2020/7/28
  */
 @Data
