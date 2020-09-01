@@ -56,6 +56,7 @@
         <module>spring-lock</module>
         <module>spring-webSocket</module>
         <module>spring-admin-example</module>
+        <module>spring-fastdfs</module>
     </modules>
 
     <dependencyManagement>
