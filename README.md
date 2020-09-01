@@ -12,6 +12,7 @@
     - spring-admin-example-dependencies : unite dependencies for spring-admin-example
     - spring-admin-example-client : admin client
     - spring-admin-example-server : admin server
+- spring-fastdfs : a example of fastdfs client
 - spring-jmh : jmh is a very good test tool
 - spring-lock : distributed lock by redis and zookeeper
 - spring-myweb : some question's test for spring-mvc
