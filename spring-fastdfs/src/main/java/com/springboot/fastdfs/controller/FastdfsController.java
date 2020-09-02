@@ -25,6 +25,11 @@ public class FastdfsController {
     @Autowired
     FastdfsService fastdfsService;
 
+    /**
+     * fastdfs 上传文件
+     * @param file
+     * @return
+     */
     @PostMapping("/upload")
     public String uploadFile2Fastdfs(@RequestParam("file") MultipartFile file) {
         try {
@@ -35,11 +40,21 @@ public class FastdfsController {
         return "上传失败！";
     }
 
+    /**
+     * fastdfs 获取文件详细信息和元数据
+     * @param filePath
+     * @return
+     */
     @GetMapping("/info")
     public Map<String, Object> getFileInfo(@RequestParam("filePath") String filePath) {
         return fastdfsService.getFileInfo(filePath);
     }
 
+    /**
+     * fastdfs 下载文件
+     * @param filePath
+     * @param response
+     */
     @GetMapping("/download")
     public void downloadFile(@RequestParam("filePath") String filePath, HttpServletResponse response) {
         fastdfsService.downloadFile(filePath, response);

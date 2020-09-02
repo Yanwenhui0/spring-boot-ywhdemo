@@ -12,7 +12,7 @@ import java.util.Date;
 
 /**
  * @author : yanwenhui
- * @description :
+ * @description : mybatis-plus 自动填充
  * @date : 2020/8/11
  */
 @Component

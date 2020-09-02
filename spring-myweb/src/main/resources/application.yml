@@ -12,6 +12,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
   global-config:
+    # 逻辑删除
     db-config:
       logic-delete-value: 1
       logic-not-delete-value: 0

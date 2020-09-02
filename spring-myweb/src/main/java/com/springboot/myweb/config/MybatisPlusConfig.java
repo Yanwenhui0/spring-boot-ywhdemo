@@ -1,6 +1,5 @@
 package com.springboot.myweb.config;
 
-import com.baomidou.mybatisplus.core.injector.ISqlInjector;
 import org.springframework.context.annotation.Configuration;
 
 /**
