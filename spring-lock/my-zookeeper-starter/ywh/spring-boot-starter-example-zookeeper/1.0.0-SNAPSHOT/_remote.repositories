@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 25 14:38:19 CST 2020
+spring-boot-starter-example-zookeeper-1.0.0-SNAPSHOT.pom>=
+spring-boot-starter-example-zookeeper-1.0.0-SNAPSHOT.jar>=
