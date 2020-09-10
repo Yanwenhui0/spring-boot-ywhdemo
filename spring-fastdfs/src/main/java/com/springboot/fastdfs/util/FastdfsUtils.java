@@ -1,6 +1,6 @@
 package com.springboot.fastdfs.util;
 
-import com.springboot.fastdfs.Entity.FastDFSFile;
+import com.springboot.fastdfs.entity.FastDFSFile;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
 import org.slf4j.Logger;

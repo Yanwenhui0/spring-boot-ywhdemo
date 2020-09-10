@@ -1,9 +1,8 @@
 package com.springboot.fastdfs.service;
 
 import com.google.common.collect.ImmutableMap;
-import com.springboot.fastdfs.Entity.FastDFSFile;
+import com.springboot.fastdfs.entity.FastDFSFile;
 import com.springboot.fastdfs.util.FastdfsUtils;
-import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
