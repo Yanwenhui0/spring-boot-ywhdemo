@@ -1,0 +1,9 @@
+FROM openjdk:8
+MAINTAINER  yanwenhui <ywh1697479326@qq.com>
+
+ADD ./spring-docker-1.0.0-SNAPSHOT.jar /opt/apps/app.jar
+ENV APP_NAME spring-docker-service
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "/opt/apps/app.jar"]

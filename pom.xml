@@ -57,6 +57,9 @@
         <module>spring-webSocket</module>
         <module>spring-admin-example</module>
         <module>spring-fastdfs</module>
+        <module>spring-quartz</module>
+        <module>spring-security-jwt</module>
+        <module>spring-docker</module>
     </modules>
 
     <dependencyManagement>

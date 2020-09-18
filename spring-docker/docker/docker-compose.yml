@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx:
+    image: yanwenhui/spring-docker-service:0.1
+    build: .
+    ports:
+      - "8080:8080"
+    container_name: spring-docker-service
+
+
