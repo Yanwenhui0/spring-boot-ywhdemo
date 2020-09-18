@@ -60,6 +60,7 @@
         <module>spring-quartz</module>
         <module>spring-security-jwt</module>
         <module>spring-docker</module>
+        <module>spring-export-file</module>
     </modules>
 
     <dependencyManagement>
