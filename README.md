@@ -22,3 +22,7 @@
     - [spring-security-server](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/spring-security/spring-security-server) : authentication server for spring security
 - [spring-webSocket](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/spring-webSocket) : demo of bio, nio and netty
 - [swagger](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/swagger) : beautiful swagger
+- [spring-docker](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/spring-docker) : deploy springboot project by docker
+- [spring-export](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/spring-export) : export files, such as excel, csv and word
+- [spring-quartz](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/spring-quartz) : springboot quartz task
+- [spring-security-jwt](https://github.com/Yanwenhui0/spring-boot-ywhdemo/tree/master/spring-security-jwt) : a demo of spring security and JWT
