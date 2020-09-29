@@ -154,7 +154,7 @@ public class UserService {
     }
 
     /**
-     * 最终版本：使用策略模式封装
+     * 最终版本：使用模板方法模式封装
      *
      * @return
      */
