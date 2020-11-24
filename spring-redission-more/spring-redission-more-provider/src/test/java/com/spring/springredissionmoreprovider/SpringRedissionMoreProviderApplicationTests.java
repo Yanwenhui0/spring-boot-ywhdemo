@@ -45,26 +45,26 @@ class SpringRedissionMoreProviderApplicationTests {
     @Test
     void testMoreRedis() {
 
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 10000; i++) {
 
-            RBucket<String> bucket = oneRedission.getBucket("yanwenhui:20201113:testdb11 - " + i);
+            RBucket<String> bucket = oneRedission.getBucket("yanwenhui:20201124:testdb11 - " + i);
             bucket.set("hello world :: db1111 - " + i);
 
 //            System.out.println(bucket.get());
 
-            RBucket<String> bucket2 = twoRedission.getBucket("yanwenhui:20201113:testdb22 - " + i);
+            RBucket<String> bucket2 = twoRedission.getBucket("yanwenhui:20201124:testdb22 - " + i);
             bucket2.set("hello world :: db2222 - " + i);
 
 //            System.out.println(bucket2.get());
 
 
             ValueOperations valueOperations = oneTemplate.opsForValue();
-            valueOperations.set("yanwenhui:template:testdb11 - " + i, "hello world :: more - db1111 - " + i);
+            valueOperations.set("yanwenhui:template24:testdb11 - " + i, "hello world :: more - db1111 - " + i);
 
 //            System.out.println(valueOperations.get("yanwenhui:template:testdb11").toString());
 
             ValueOperations valueOperations2 = twoTemplate.opsForValue();
-            valueOperations2.set("yanwenhui:template:testdb22 - " + i, "hello world :: more - db2222 - " + i);
+            valueOperations2.set("yanwenhui:template24:testdb22 - " + i, "hello world :: more - db2222 - " + i);
 //            System.out.println(valueOperations2.get("yanwenhui:template:testdb22").toString());
         }
 

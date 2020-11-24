@@ -8,10 +8,10 @@ configs:
           oneRedisson:
             singleServerConfigExt:
               address: redis://192.168.0.110:6379
-#              password: root123
+              #              password: root123
               database: 1
           twoRedisson:
             singleServerConfigExt:
               address: redis://192.168.0.110:6379
-#              password: root123
+              #              password: root123
               database: 2
