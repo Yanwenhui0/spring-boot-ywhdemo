@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.springboot</groupId>
-        <artifactId>spring-boot-ywhdemo</artifactId>
+        <artifactId>spring-redission-more</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>spring-redission-more-consumer</artifactId>

@@ -28,7 +28,6 @@
         <dependency>
             <groupId>com.alibaba.spring</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>1.0.6</version>
         </dependency>
 
         <!-- starter里面包含 RedissonCilent,RedisConnectionFactory,RedisTemplate,StringRedisTemplate 的自动配置，

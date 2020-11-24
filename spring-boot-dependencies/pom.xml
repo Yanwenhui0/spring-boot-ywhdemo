@@ -13,7 +13,7 @@
         <spring-cloud-alibaba.verion>2.1.1.RELEASE</spring-cloud-alibaba.verion>
         <spring-boot-pagehelper.version>1.2.13</spring-boot-pagehelper.version>
         <alibaba-seata.version>1.0.0</alibaba-seata.version>
-        <alibaba-spring-context-support.version>1.0.5</alibaba-spring-context-support.version>
+        <alibaba-spring-context-support.version>1.0.6</alibaba-spring-context-support.version>
         <apache-sharding-sphere.version>4.0.0-RC3</apache-sharding-sphere.version>
         <okhttp3.version>4.2.2</okhttp3.version>
         <commons-collection.version>4.4</commons-collection.version>
