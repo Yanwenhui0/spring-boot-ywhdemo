@@ -44,7 +44,6 @@
     </repositories>
 
     <modules>
-        <module>spring-boot-dependencies</module>
         <module>mybatis-more</module>
         <module>mybatis-plus-more</module>
         <module>spring-security</module>
