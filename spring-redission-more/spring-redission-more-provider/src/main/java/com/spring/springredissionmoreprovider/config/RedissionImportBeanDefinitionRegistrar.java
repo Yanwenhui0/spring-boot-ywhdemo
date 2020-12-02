@@ -13,7 +13,10 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotationMetadata;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.util.Assert;
 
 import java.util.ArrayList;
@@ -80,8 +83,11 @@ public class RedissionImportBeanDefinitionRegistrar implements ImportBeanDefinit
             registry.registerBeanDefinition(beanName + "StringTemplate", beanDefinitionBuilder.getBeanDefinition());
 
             // redisTemplate BeanDefinitionBuilder
-            beanDefinitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(StringRedisTemplate.class);
+            beanDefinitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(RedisTemplate.class);
             beanDefinitionBuilder.addConstructorArgReference(beanName + "ConnectionFactory");
+            beanDefinitionBuilder.addPropertyReference("connectionFactory", beanName + "ConnectionFactory");
+            beanDefinitionBuilder.addPropertyValue("keySerializer", new StringRedisSerializer());
+            beanDefinitionBuilder.addPropertyValue("valueSerializer", new GenericJackson2JsonRedisSerializer());
             registry.registerBeanDefinition(beanName + "Template", beanDefinitionBuilder.getBeanDefinition());
         }
 
