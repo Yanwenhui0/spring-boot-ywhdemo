@@ -48,6 +48,7 @@
         <module>mybatis-plus-more</module>
         <module>spring-security</module>
         <module>springdata-more</module>
+        <module>springdata-jpa</module>
         <module>swagger</module>
         <module>spring-myweb</module>
         <module>spring-redis</module>
