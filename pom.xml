@@ -69,8 +69,8 @@
             <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-spring-boot-autoconfigure -->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-autoconfigure</artifactId>
-                <version>3.0.1</version>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>3.0.2</version>
             </dependency>
 
             <dependency>
