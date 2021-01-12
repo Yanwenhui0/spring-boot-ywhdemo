@@ -26,7 +26,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-        .anyRequest().authenticated();
+                .anyRequest().authenticated();
 //                .antMatchers("/").hasAuthority("SystemContent")
 //                .antMatchers("/view/**").hasAuthority("SystemContentView")
 //                .antMatchers("/insert/**").hasAuthority("SystemContentInsert")

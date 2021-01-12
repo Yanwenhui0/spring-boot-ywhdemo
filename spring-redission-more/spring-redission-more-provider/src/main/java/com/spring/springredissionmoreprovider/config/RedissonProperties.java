@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @description :
  * @date : 2020/11/7
  */
+@ConfigurationProperties(prefix = "configs.com.yanwenhui.redis.redisson")
 public class RedissonProperties extends ConfigExt {
 
     private String beanName;

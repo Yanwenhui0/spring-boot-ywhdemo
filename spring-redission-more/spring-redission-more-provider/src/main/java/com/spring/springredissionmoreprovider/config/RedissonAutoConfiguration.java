@@ -34,7 +34,6 @@ public class RedissonAutoConfiguration {
 
     @Bean
     @Primary
-    @ConfigurationProperties(prefix = "configs.com.yanwenhui.redis.redisson")
     public RedissonProperties primaryRedissonproperties() {
         return new RedissonProperties();
     }
