@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mybatis-tenant?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&autoReconnect=true
+    username: root
+    password: ywh169747
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

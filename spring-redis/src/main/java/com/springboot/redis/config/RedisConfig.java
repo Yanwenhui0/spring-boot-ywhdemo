@@ -3,6 +3,7 @@ package com.springboot.redis.config;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.KeyGenerator;
@@ -13,6 +14,10 @@ import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.cache.RedisCacheWriter;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceClientConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.data.redis.connection.lettuce.LettucePoolingClientConfiguration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.*;
 
@@ -29,6 +34,20 @@ import java.util.Map;
 @Configuration
 @EnableCaching
 public class RedisConfig {
+
+
+//    @Bean
+//    @ConfigurationProperties(prefix = "spring.redis2")
+//    public RedisStandaloneConfiguration redisConfig2() {
+//        return new RedisStandaloneConfiguration();
+//    }
+//
+//
+//    @Bean
+//    @Primary
+//    public LettuceConnectionFactory factory(RedisStandaloneConfiguration redisConfig2) {
+//        return new LettuceConnectionFactory(redisConfig2);
+//    }
 
     @Bean(name = "redisTemplate")
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {

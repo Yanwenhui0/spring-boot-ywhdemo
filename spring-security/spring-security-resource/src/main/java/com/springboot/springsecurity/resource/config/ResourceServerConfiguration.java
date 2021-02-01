@@ -26,11 +26,11 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
+                .antMatchers("/").hasAuthority("SystemContent")
+                .antMatchers("/view/**").hasAuthority("SystemContentView")
+                .antMatchers("/insert/**").hasAuthority("SystemContentInsert")
+                .antMatchers("/update/**").hasAuthority("SystemContentUpdate")
+                .antMatchers("/delete/**").hasAuthority("SystemContentDelete")
                 .anyRequest().authenticated();
-//                .antMatchers("/").hasAuthority("SystemContent")
-//                .antMatchers("/view/**").hasAuthority("SystemContentView")
-//                .antMatchers("/insert/**").hasAuthority("SystemContentInsert")
-//                .antMatchers("/update/**").hasAuthority("SystemContentUpdate")
-//                .antMatchers("/delete/**").hasAuthority("SystemContentDelete");
     }
 }

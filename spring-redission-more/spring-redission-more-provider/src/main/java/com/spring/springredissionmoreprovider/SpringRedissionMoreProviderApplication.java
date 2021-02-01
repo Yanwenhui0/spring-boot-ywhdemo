@@ -1,6 +1,5 @@
 package com.spring.springredissionmoreprovider;
 
-import com.spring.springredissionmoreprovider.config.EnableDynamicRedisson;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

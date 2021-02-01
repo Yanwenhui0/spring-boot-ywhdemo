@@ -46,6 +46,7 @@
     <modules>
         <module>mybatis-more</module>
         <module>mybatis-plus-more</module>
+        <module>mybatis-plus-tenant</module>
         <module>spring-security</module>
         <module>springdata-more</module>
         <module>springdata-jpa</module>

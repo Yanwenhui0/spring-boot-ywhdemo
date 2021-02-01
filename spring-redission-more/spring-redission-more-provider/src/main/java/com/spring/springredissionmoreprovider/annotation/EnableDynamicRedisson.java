@@ -1,5 +1,6 @@
-package com.spring.springredissionmoreprovider.config;
+package com.spring.springredissionmoreprovider.annotation;
 
+import com.spring.springredissionmoreprovider.config.RedissionImportBeanDefinitionRegistrar;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;

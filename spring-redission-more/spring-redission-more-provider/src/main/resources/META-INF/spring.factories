@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.ywh.shoppingcommonredisson.config.RedissonAutoConfiguration\
+  com.ywh.shoppingcommonredisson.config.RedissonDynamicAutoConfiguration
