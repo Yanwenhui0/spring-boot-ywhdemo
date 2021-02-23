@@ -13,9 +13,11 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
-      server-addr: 39.100.31.158:8848
+      server-addr: 127.0.0.1:8848
       username: nacos
       password: nacos
+
+  # 与注册中心整合，admin 直接从注册中心取服务
 #  boot:
 #    admin:
 #      notify:
@@ -30,3 +32,12 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+
+logging:
+  config: classpath:config/logback.xml
+  level:
+    root: ${LOG_LEVEL:INFO}
+    com.test.demo: info
+  #  方便Spring Boot Admin页面上实时查看日志
+  file:
+    name: logs/admin-client.log

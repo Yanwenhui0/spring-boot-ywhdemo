@@ -63,6 +63,7 @@
         <module>spring-docker</module>
         <module>spring-export-file</module>
         <module>spring-redission-more</module>
+        <module>spring-boot-monitor</module>
     </modules>
 
     <dependencyManagement>

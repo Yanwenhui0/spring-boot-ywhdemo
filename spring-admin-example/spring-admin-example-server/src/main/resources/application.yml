@@ -13,7 +13,7 @@ spring:
         metadata:
           user.name: "yanwenhui"
           user.password: "ywh169747"
-      server-addr: 39.100.31.158:8848
+      server-addr: 192.168.100.97:8848
       username: nacos
       password: nacos
   security:
@@ -40,3 +40,12 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+
+logging:
+  config: classpath:config/logback.xml
+  level:
+    root: ${LOG_LEVEL:INFO}
+    com.test.demo: info
+  #  方便Spring Boot Admin页面上实时查看日志
+  file:
+    name: logs/admin-server.log

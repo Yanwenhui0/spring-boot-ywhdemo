@@ -91,6 +91,13 @@ spring:
           from: 1697479326@qq.com
 ```
 
+#### 注册 nacos 报错
+
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/api//nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried:
+
+**2021-02-23：由于阿里云服务器过期了，在本地搭建了nacos-1.4.1版本，导致注册nacos报错，错误原因：版本不一致导致，nacos-1.4.1 -> spring cloud alibaba 2.2.5 -> spring boot 2.3.2**
+
+**本地 nacos 为集群启动模式，在集群配置文件中不能写 127.0.0.1:8848，否则会注册到 nacos 报错**
 
 ## pom.xml 文件
 
