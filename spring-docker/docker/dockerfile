@@ -7,3 +7,5 @@ ENV APP_NAME spring-docker-service
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "/opt/apps/app.jar"]
+
+CMD["--spring.profiles.active=test"]
