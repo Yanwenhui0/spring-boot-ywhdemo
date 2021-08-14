@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.BoundStreamOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @SpringBootTest
 class SpringRedissionMoreProviderApplicationTests {
@@ -34,13 +35,13 @@ class SpringRedissionMoreProviderApplicationTests {
     private RedisTemplate twoTemplate;
 
 
-//    @Test
-//    void testRedis() {
-//        RBucket<String> bucket = redission.getBucket("yanwenhui:20201109:goods");
-//        bucket.set("hello world");
-//
-//        System.out.println(bucket.get());
-//    }
+    @Test
+    void testRedis() {
+        RBucket<String> bucket = oneRedission.getBucket("yanwenhui:20201109:goods");
+        bucket.set("hello world");
+
+        System.out.println(bucket.get());
+    }
 
     @Test
     void testMoreRedis() {

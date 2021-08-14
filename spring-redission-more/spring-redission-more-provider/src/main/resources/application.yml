@@ -7,11 +7,11 @@ configs:
             enable: true
           oneRedisson:
             singleServerConfigExt:
-              address: redis://192.168.0.110:6379
-#              password: root123
+              address: redis://139.196.228.154:6380
+#              password: 123456
               database: 1
           twoRedisson:
             singleServerConfigExt:
-              address: redis://192.168.0.110:6379
-#              password: root123
+              address: redis://139.196.228.154:6380
+#              password: 123456
               database: 2

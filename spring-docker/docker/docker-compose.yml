@@ -1,6 +1,6 @@
 version: '3'
 services:
-  nginx:
+  test-service:
     image: yanwenhui/spring-docker-service:0.1
     build: .
     ports:

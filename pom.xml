@@ -64,6 +64,8 @@
         <module>spring-export-file</module>
         <module>spring-redission-more</module>
         <module>spring-boot-monitor</module>
+        <module>spring-elk</module>
+        <module>spring-jetty</module>
     </modules>
 
     <dependencyManagement>

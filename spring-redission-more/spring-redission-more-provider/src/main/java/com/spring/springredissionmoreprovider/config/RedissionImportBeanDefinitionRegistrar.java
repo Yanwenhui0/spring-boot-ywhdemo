@@ -84,7 +84,8 @@ public class RedissionImportBeanDefinitionRegistrar implements ImportBeanDefinit
 
             // redisTemplate BeanDefinitionBuilder
             beanDefinitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(RedisTemplate.class);
-            beanDefinitionBuilder.addConstructorArgReference(beanName + "ConnectionFactory");
+            beanDefinitionBuilder.addPropertyReference("connectionFactory",beanName + "ConnectionFactory");
+//            beanDefinitionBuilder.addConstructorArgReference(beanName + "ConnectionFactory");
             beanDefinitionBuilder.addPropertyReference("connectionFactory", beanName + "ConnectionFactory");
             beanDefinitionBuilder.addPropertyValue("keySerializer", new StringRedisSerializer());
             beanDefinitionBuilder.addPropertyValue("valueSerializer", new GenericJackson2JsonRedisSerializer());

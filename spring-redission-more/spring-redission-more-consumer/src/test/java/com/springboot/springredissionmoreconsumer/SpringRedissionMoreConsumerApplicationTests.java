@@ -2,12 +2,15 @@ package com.springboot.springredissionmoreconsumer;
 
 import org.junit.jupiter.api.Test;
 import org.redisson.api.RBucket;
+import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+
+import java.util.concurrent.TimeUnit;
 
 @SpringBootTest
 class SpringRedissionMoreConsumerApplicationTests {
@@ -36,6 +39,25 @@ class SpringRedissionMoreConsumerApplicationTests {
 //
 //        System.out.println(bucket.get());
 //    }
+
+    @Test
+    void testLock() throws InterruptedException {
+
+        final RLock lock = oneRedission.getLock("ywh-lock");
+        lock.tryLock(600, 600, TimeUnit.MINUTES);
+
+        Thread.sleep(600*1000);
+    }
+
+    @Test
+    void testLock2() throws InterruptedException {
+
+        final RLock lock = oneRedission.getLock("ywh-lock");
+        lock.tryLock(600, 600, TimeUnit.MINUTES);
+
+        Thread.sleep(600*1000);
+    }
+
 
     @Test
     void testMoreRedis() {
